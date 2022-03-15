@@ -43,7 +43,7 @@ public class Bonificacao {
 	@Column(nullable = false)
 	private StatusBonificacao bo_status;
 	
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name = "id_mentor")
 	private Mentor mentor;
 

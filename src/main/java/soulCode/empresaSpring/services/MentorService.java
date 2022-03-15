@@ -109,7 +109,7 @@ public class MentorService {
 	}
 	
 	/* MÉTODO UPDATE ID */
-	public Mentor atualizarMentor(Mentor mentor) { //atualizar func do objeto tipo Funcionario
+	public Mentor atualizarMentor(Mentor mentor) { //atualizar func do objeto tipo Mentor
 		mostrarUmMentor(mentor.getId_mentor()); //Já utiliza o filtro criado no método READ by ID
 		return mentorRepository.save(mentor);
 	}
